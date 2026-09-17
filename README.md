@@ -14,7 +14,7 @@ Primary pages:
 - Home: `/`
 - Research: `/research/`
 - Publications: `/publications/`
-- CV: `/cv/`
+- CV: `/files/Junseo_Lee_CV.pdf`
 
 Deployment target: `https://jseool.github.io/`
 
