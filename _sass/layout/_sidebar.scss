@@ -322,3 +322,42 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+
+  .sidebar .author__content,
+  .sidebar .author__urls-wrapper button {
+    display: none;
+  }
+
+  .sidebar .author__urls-wrapper {
+    display: block;
+    cursor: default;
+  }
+
+  .sidebar .author__urls {
+    display: flex;
+    position: static;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+
+    &:before,
+    &:after {
+      display: none;
+    }
+
+    a {
+      margin: 0;
+      padding: 0;
+      font-size: $type-size-6;
+    }
+  }
+}
