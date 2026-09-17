@@ -7,9 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-I received my M.S. in Data Science from Seoul National University, where I was advised by Hyojin Sung in the CODE Lab. I am interested in building systems that make performance optimization more automatic, data-driven, and aware of real hardware and runtime constraints.
+I am interested in building systems that automatically find efficient ways to run complex workloads, especially in machine learning. My research focuses on making this optimization practical by reducing search costs and adapting execution to the underlying hardware.
 
-I am applying to PhD programs for Fall 2027.
+During my M.S. at Seoul National University, I worked on compiler autotuning and efficient LLM inference, from improving search over large optimization spaces to studying activation sparsity and optimizing sparse GPU kernels.
+
+I am preparing for Fall 2027 Ph.D. applications in computer systems and ML systems. Going forward, I hope to develop systems that automatically optimize ML workloads across algorithms, compilers, runtimes, and hardware, making high-performance execution easier to achieve without extensive manual tuning.
 
 Research Interests
 ======
