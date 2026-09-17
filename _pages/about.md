@@ -7,11 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-I am interested in building systems that automatically find efficient ways to run complex workloads, especially in machine learning. My research focuses on making this optimization practical by reducing search costs and adapting execution to the underlying hardware.
+I am interested in building systems that automatically find efficient ways to run complex ML workloads. My research focuses on reducing search costs and adapting execution to the underlying hardware.
 
-During my M.S. at Seoul National University, I worked on compiler autotuning and efficient LLM inference, from improving search over large optimization spaces to studying activation sparsity and optimizing sparse GPU kernels.
+During my M.S. at Seoul National University, I worked on compiler autotuning and efficient LLM inference, including search over large optimization spaces, activation sparsity, and sparse GPU kernels.
 
-I am preparing for Fall 2027 Ph.D. applications in computer systems and ML systems. Going forward, I hope to develop systems that automatically optimize ML workloads across algorithms, compilers, runtimes, and hardware, making high-performance execution easier to achieve without extensive manual tuning.
+I am preparing for Fall 2027 Ph.D. applications in computer systems and ML systems. I hope to develop systems that optimize ML workloads across algorithms, compilers, runtimes, and hardware, making high-performance execution easier to achieve without extensive manual tuning.
 
 Research Interests
 ======
