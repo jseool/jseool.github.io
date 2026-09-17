@@ -33,4 +33,4 @@ Links
 - [Research](/research/)
 - [Publications](/publications/)
 - [Email](mailto:jseool@snu.ac.kr)
-- GitHub: not provided in CV
+- [GitHub](https://github.com/jseool)
