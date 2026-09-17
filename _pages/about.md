@@ -35,7 +35,7 @@ UCEAP Exchange Program, 2022-2023.
 Research Experience
 ======
 
-**Graduate Researcher, CODE Lab, Seoul National University**<br>
+**CODE Lab, Seoul National University**<br>
 September 2024 - present.
 
 - Evaluated HYPERF, an end-to-end autotuning framework for HPC.
