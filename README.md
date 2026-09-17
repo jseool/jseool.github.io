@@ -24,4 +24,4 @@ The downloadable CV is stored at `files/Junseo_Lee_CV.pdf`.
 
 - Replace the local CV PDF link with a finalized view-only Google Drive or Google Docs link after the CV is complete.
 - Add a professional headshot if available.
-- Add GitHub, Google Scholar, ORCID, or other profile links when ready.
+- Add Google Scholar, ORCID, or other profile links when ready.
