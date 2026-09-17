@@ -20,4 +20,5 @@ Efficient LLM Systems / Sparse Computing
 ======
 
 **Towards Batched Activation Sparsity in LLM Decoding** *(Master's thesis)*
+
 Motivated by TEAL (ICLR 2025), I investigated whether batch-shared activation sparsity remains effective during autoregressive LLM decoding while preserving model quality. I developed an oracle analysis and Triton block-sparse GEMM kernels. The project found 64% per-decoding-step sparsity potential at batch size 16, while revealing a gap between the oracle upper bound and practical online sparsification due to quality degradation and autoregressive error accumulation.
