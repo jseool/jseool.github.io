@@ -24,7 +24,7 @@ Current Research Focus
 ======
 
 - ML-guided autotuning for compiler and sparse workloads
-- Practical limits of activation sparsity under batched LLM decoding
+- Sparse computing for efficient LLM inference
 
 Links
 ======
