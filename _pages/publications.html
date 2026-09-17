@@ -1,36 +1,20 @@
 ---
-layout: archive
+layout: single
 title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+Published
+======
 
-{% include base_path %}
+**HYPERF: End-to-End Autotuning Framework for High-Performance Computing**  
+Park, J.\*, Shin, Y.\*, Lee, J., **Lee, J.**, Kim, J., Kwon, O., and Sung, H.  
+Proceedings of the International Symposium on High-Performance Parallel and Distributed Computing (HPDC), 2025.  
+\*Co-first authors.
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+Manuscripts
+======
 
-
-
+**UniTune manuscript**  
+Submitted to SC 2026; resubmission preparation in progress.
