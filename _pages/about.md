@@ -41,5 +41,5 @@ Research Experience
 September 2024 - present.
 
 - Evaluated HYPERF, an end-to-end autotuning framework for HPC.
-- Developed data-driven search methods for UniTune, including SpMV autotuning and budget allocation for hierarchical search.
+- Developed data-driven search methods for UniTune, including row-binning configuration selection for SpMV and budget allocation for hierarchical search.
 - Studied activation sparsity for LLM decoding and implemented Triton block-sparse GEMM kernels.

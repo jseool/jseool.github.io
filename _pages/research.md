@@ -19,6 +19,5 @@ UniTune is an autotuning framework for exploring large, hierarchical search spac
 Efficient LLM Systems / Sparse Computing
 ======
 
-**Towards Batched Activation Sparsity in LLM Decoding** *(Master's thesis)*
-
+**Towards Batched Activation Sparsity in LLM Decoding** *(Master's thesis)*<br>
 Motivated by the potential of activation sparsity to accelerate LLM inference, I investigated whether TEAL's approach could be extended to batch-shared sparsity during autoregressive decoding while preserving model quality. I developed an oracle analysis and Triton block-sparse GEMM kernels. The project found 64% per-decoding-step sparsity potential at batch size 16, while revealing a gap between the oracle upper bound and practical online sparsification due to quality degradation and autoregressive error accumulation.
