@@ -13,7 +13,7 @@ Automatic System Optimization / Autotuning
 **HYPERF**  
 End-to-end autotuning for high-performance computing. I evaluated HYPERF against an OpenTuner baseline across PolyBench kernels; HYPERF achieved a 6.0x average execution speedup and 1.2x faster tuning convergence. Published at HPDC 2025.
 
-**HYPERF v2**  
+**HYPERF v2**<br>
 HYPERF v2 is an autotuning framework for exploring large, hierarchical search spaces. For the SC 2026 submission, I profiled row-binning strategies for the SpMV workload across matrices from the SuiteSparse Matrix Collection, developed a hierarchical ML selector to identify promising configurations, and integrated its predictions into HYPERF v2's sampler. For the next submission, I am adapting a bandit-based Rising-Successive Rejects (R-SR) budget allocation strategy to efficiently explore HYPERF v2's hierarchical search space.
 
 Efficient LLM Systems / Sparse Computing
