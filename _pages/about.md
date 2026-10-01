@@ -8,13 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-<nav class="profile-links" aria-label="Contact links">
-  <a href="mailto:jseool@snu.ac.kr">Email</a>
-  <a href="https://www.linkedin.com/in/junseo-lee-586005318">LinkedIn</a>
-  <a href="https://github.com/jseool">GitHub</a>
-  <a href="/files/Junseo_Lee_CV.pdf">CV</a>
-</nav>
-
 <section id="about" class="home-section">
   <h2>About</h2>
   <p>I am interested in building systems that automatically find efficient ways to run complex ML workloads. My research focuses on reducing search costs and adapting execution to the underlying hardware.</p>

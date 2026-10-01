@@ -1,7 +1,15 @@
 {% include base_path %}
 <div class="masthead">
   <div class="masthead__inner-wrap">
-    <a class="masthead__brand" href="{{ base_path }}/#about">{{ site.title }}</a>
+    <div class="masthead__identity">
+      <a class="masthead__brand" href="{{ base_path }}/#about">{{ site.title }}</a>
+      <nav class="masthead__contact-links" aria-label="Contact links">
+        <a href="mailto:jseool@snu.ac.kr">Email</a>
+        <a href="https://www.linkedin.com/in/junseo-lee-586005318">LinkedIn</a>
+        <a href="https://github.com/jseool">GitHub</a>
+        <a href="{{ base_path }}/files/Junseo_Lee_CV.pdf">CV</a>
+      </nav>
+    </div>
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <button><span class="navicon"></span></button>

@@ -45,28 +45,6 @@
     padding-left: 0;
   }
 
-  .page__title {
-    text-align: center;
-  }
-
-  .profile-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.45rem 1.25rem;
-    margin: 0.85rem 0 2.75rem;
-    font-family: $sans-serif;
-
-    a {
-      font-weight: 600;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-
   .home-section {
     margin-top: 3.25rem;
     scroll-margin-top: 9rem;
@@ -104,10 +82,6 @@
   }
 
   @media (max-width: 600px) {
-    .profile-links {
-      margin-bottom: 2.25rem;
-    }
-
     .home-section {
       margin-top: 2.75rem;
       scroll-margin-top: 8rem;

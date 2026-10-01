@@ -26,8 +26,10 @@
 
   &__inner-wrap {
     @include container;
-    @include clearfix;
-    padding: 0.4em 1em 0.25em;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.55rem 1rem 0.5rem;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
@@ -44,23 +46,49 @@
   }
 }
 
+.masthead__identity {
+  flex: 0 0 auto;
+  min-width: 0;
+}
+
 .masthead__brand {
-  display: table;
-  margin: 0 auto;
-  padding: 0.1rem 0 0.15rem;
+  display: inline-block;
   color: var(--global-masthead-link-color);
   font-size: $type-size-4;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.15;
 
   &:hover {
     color: var(--global-masthead-link-color-hover);
   }
 }
 
+.masthead__contact-links {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.25rem;
+  font-family: $sans-serif;
+  font-size: $type-size-7;
+  line-height: 1.2;
+
+  a {
+    color: var(--global-link-color);
+    font-weight: 600;
+    white-space: nowrap;
+
+    &:hover {
+      color: var(--global-link-color-hover);
+      text-decoration: underline;
+    }
+  }
+}
+
 .masthead__menu {
   display: flex;
-  justify-content: center;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  min-width: 0;
 
   ul {
     margin: 0;
@@ -71,10 +99,37 @@
 
   .greedy-nav {
     width: 100%;
+    min-width: 0;
   }
 
   .visible-links {
-    margin: 0 auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .masthead__inner-wrap {
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem 0.45rem;
+  }
+
+  .masthead__brand {
+    font-size: $type-size-5;
+  }
+
+  .masthead__contact-links {
+    gap: 0.55rem;
+    margin-top: 0.2rem;
+    font-size: 0.65rem;
+  }
+
+  .masthead__menu {
+    align-self: stretch;
+    align-items: center;
+
+    .greedy-nav {
+      min-width: 3.75rem;
+    }
   }
 }
 
