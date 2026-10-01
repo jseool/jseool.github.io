@@ -28,7 +28,7 @@ redirect_from:
 
 <section id="publications" class="home-section">
   <h2>Publications</h2>
-  <p><strong><a href="https://doi.org/10.1145/3731545.3731588">HYPERF: End-to-End Autotuning Framework for High-Performance Computing</a></strong><br>
+  <p><strong><a class="publication-title" href="https://doi.org/10.1145/3731545.3731588">HYPERF: End-to-End Autotuning Framework for High-Performance Computing</a></strong><br>
   Juseong Park<sup>*</sup>, Yongwon Shin<sup>*</sup>, Junghyun Lee, <strong>Junseo Lee</strong>, Juyeon Kim, Oh-Kyoung Kwon, and Hyojin Sung.<br>
   HPDC 2025. <small>* Co-first authors.</small></p>
 </section>
