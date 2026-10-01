@@ -34,6 +34,91 @@
   }
 }
 
+.page--one-page {
+  @include breakpoint($large) {
+    float: none;
+    width: auto;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .page__title {
+    text-align: center;
+  }
+
+  .profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.45rem 1.25rem;
+    margin: 0.85rem 0 2.75rem;
+    font-family: $sans-serif;
+
+    a {
+      font-weight: 600;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .home-section {
+    margin-top: 3.25rem;
+    scroll-margin-top: 9rem;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    h3 {
+      margin-top: 2rem;
+      font-size: $type-size-4;
+    }
+  }
+
+  .research-interest-list {
+    columns: 2;
+    column-gap: 2.5rem;
+  }
+
+  .education-entry {
+    margin-bottom: 1.5rem;
+
+    h3 {
+      margin: 0 0 0.15rem;
+      font-size: 1em;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .profile-links {
+      margin-bottom: 2.25rem;
+    }
+
+    .home-section {
+      margin-top: 2.75rem;
+      scroll-margin-top: 8rem;
+    }
+
+    .research-interest-list {
+      columns: 1;
+    }
+  }
+}
+
 .page__title {
   margin-top: 0;
   line-height: 1;
