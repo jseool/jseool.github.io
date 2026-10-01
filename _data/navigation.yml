@@ -1,12 +1,15 @@
 main:
-  - title: "Home"
-    url: /
+  - title: "About"
+    url: /#about
 
-  - title: "Research"
-    url: /research/
+  - title: "Research Interests"
+    url: /#research-interests
 
   - title: "Publications"
-    url: /publications/
+    url: /#publications
 
-  - title: "CV"
-    url: /files/Junseo_Lee_CV.pdf
+  - title: "Research Projects"
+    url: /#research-projects
+
+  - title: "Education"
+    url: /#education
