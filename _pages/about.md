@@ -10,19 +10,24 @@ redirect_from:
 
 <section id="about" class="home-section">
   <h2>About</h2>
-  <p>I am interested in building systems that automatically find efficient ways to run complex ML workloads. My research focuses on reducing search costs and adapting execution to the underlying hardware.</p>
-  <p>During my M.S. at Seoul National University, I worked on compiler autotuning and efficient LLM inference, including search over large optimization spaces, activation sparsity, and sparse GPU kernels.</p>
-  <p>I am preparing for Fall 2027 Ph.D. applications in computer systems and ML systems. I hope to develop systems that optimize ML workloads across algorithms, compilers, runtimes, and hardware, making high-performance execution easier to achieve without extensive manual tuning.</p>
+  <div class="about-layout">
+    <div class="about-copy">
+      <p>I am interested in building systems that automatically optimize complex ML workloads. My research focuses on making this optimization practical by reducing search costs and adapting execution to the underlying hardware.</p>
+      <p>I received a Master of Data Science from Seoul National University, where I worked as a graduate researcher in the <a class="lab-link" href="https://codelab.snu.ac.kr/">CODE Lab</a>. I worked on compiler autotuning for high-performance computing, developing data-driven autotuning strategies. I also investigated activation sparsity for efficient LLM inference and developed sparse GPU kernels. I continue to collaborate with the lab on an autotuning framework.</p>
+      <p><strong>Status:</strong> I am applying to <strong>Computer Science Ph.D. programs for Fall 2027</strong>, with a focus on computer systems and ML systems.</p>
+    </div>
+    <figure class="about-photo">
+      <img src="/images/junseo-lee.jpg" alt="Portrait of Junseo Lee">
+    </figure>
+  </div>
 </section>
 
 <section id="research-interests" class="home-section">
   <h2>Research Interests</h2>
   <ul class="research-interest-list">
-    <li>Computer systems</li>
-    <li>ML systems</li>
-    <li>Compilers and runtime systems</li>
-    <li>Autotuning</li>
-    <li>Hardware-aware optimization</li>
+    <li><strong>ML Systems &amp; Compilers:</strong> Compiler and runtime optimization for ML workloads</li>
+    <li><strong>Autotuning &amp; Search Algorithms:</strong> Efficient exploration of large optimization spaces</li>
+    <li><strong>Hardware-aware Execution:</strong> Efficient GPU kernels and sparse computation</li>
   </ul>
 </section>
 
@@ -39,15 +44,18 @@ redirect_from:
   <h3>Automatic System Optimization / Autotuning</h3>
 
   <p><strong>HYPERF</strong><br>
-  End-to-end autotuning for high-performance computing. I evaluated HYPERF against an OpenTuner baseline across PolyBench kernels; HYPERF achieved a 6.0x average execution speedup and 1.2x faster tuning convergence. Published at HPDC 2025.</p>
+  An end-to-end autotuning framework for high-performance computing. I evaluated HYPERF against OpenTuner on PolyBench kernels, demonstrating a 6.0x average execution speedup and 1.2x faster tuning convergence. <em>Published at HPDC 2025.</em></p>
 
-  <p><strong>HYPERF v2</strong><br>
-  HYPERF v2 is an autotuning framework for exploring large, hierarchical search spaces. For the SC 2026 submission, I profiled row-binning strategies for the SpMV workload across matrices from the SuiteSparse Matrix Collection, developed a hierarchical ML selector to identify promising configurations, and integrated its predictions into HYPERF v2's sampler. For the next submission, I am adapting a bandit-based Rising-Successive Rejects (R-SR) budget allocation strategy to efficiently explore HYPERF v2's hierarchical search space.</p>
+  <p><strong>SpMV Workload Optimization</strong> <em>(HYPERF follow-up)</em><br>
+  I built an ML-based selector for sparse matrix-vector multiplication (SpMV). It uses XGBoost to decide whether to group rows by their nonzero counts and a C5.0 decision tree to select grouping configurations (nonzero-count interval and number of groups) for evaluation. Integrating its predictions into the autotuning sampler reduced configuration evaluations from 570 to 230 to reach within 5% of the best observed execution time across matrices from the SuiteSparse Matrix Collection. <em>Included in the SC 2026 submission.</em></p>
+
+  <p><strong>Autotuning Sampler and TVM Cost Model</strong><br>
+  In ongoing follow-up work on HYPERF, I am adapting Rising-Successive Rejects to allocate more evaluation budget to promising combinations of algorithm parameters and polyhedral structures in the autotuning sampler. I am also applying bootstrap aggregation to TVM's execution-time prediction model to improve its reliability with limited training data. <em>In preparation for OSDI.</em></p>
 
   <h3>Efficient LLM Systems / Sparse Computing</h3>
 
   <p><strong>Towards Batched Activation Sparsity in LLM Decoding</strong> <em>(Master's thesis)</em><br>
-  Motivated by the potential of activation sparsity to accelerate LLM inference, I investigated whether TEAL's approach could be extended to batch-shared sparsity during autoregressive decoding while preserving model quality. I developed an oracle analysis and Triton block-sparse GEMM kernels. The project found 64% per-decoding-step sparsity potential at batch size 16, while revealing a gap between the oracle upper bound and practical online sparsification due to quality degradation and autoregressive error accumulation.</p>
+  I developed an oracle analysis and Triton block-sparse GPU kernels to study activation sparsity in batched LLM decoding. The oracle showed approximately 64% average block sparsity at batch size 16 when each decoding step was evaluated independently. With limited model-quality degradation, an online heuristic achieved only 11.5% average sparsity. Mask-selection overhead made end-to-end decoding slower than dense execution, with throughput at only 0.59&times; the dense baseline.</p>
 </section>
 
 <section id="education" class="home-section">
