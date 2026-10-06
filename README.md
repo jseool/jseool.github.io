@@ -1,27 +1,20 @@
 # Junseo Lee Academic Website
 
-This repository contains Junseo Lee's academic personal website for PhD application audiences, built from the Academic Pages Jekyll template.
+Junseo Lee's academic website: [jseool.github.io](https://jseool.github.io/).
 
-The site emphasizes:
+The single-page site includes About, Research Interests, Publications, Research Projects, and Education.
 
-- Automatic system optimization and autotuning
-- ML compilers and tensor program optimization
-- Efficient LLM inference
-- Sparse computing
+## Editing
 
-Primary pages:
+- Page content: `_pages/about.md`
+- Navigation: `_data/navigation.yml`
+- Site settings: `_config.yml`
+- Page styles: `_sass/layout/_page.scss`
+- Downloadable CV: `files/Junseo_Lee_CV.pdf`
+- Portrait: `images/junseo-lee.jpg`
 
-- Home: `/`
-- Research: `/research/`
-- Publications: `/publications/`
-- CV: `/files/Junseo_Lee_CV.pdf`
+GitHub Pages builds and publishes the site from the `main` branch.
 
-Deployment target: `https://jseool.github.io/`
+## Attribution
 
-The downloadable CV is stored at `files/Junseo_Lee_CV.pdf`.
-
-## To Update Later
-
-- Replace the local CV PDF link with a finalized view-only Google Drive or Google Docs link after the CV is complete.
-- Add a professional headshot if available.
-- Add Google Scholar, ORCID, or other profile links when ready.
+Built with [Academic Pages](https://github.com/academicpages/academicpages.github.io), based on Minimal Mistakes. The upstream license is preserved in `LICENSE`.
