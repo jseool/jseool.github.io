@@ -55,7 +55,7 @@ redirect_from:
   <h3>Efficient LLM Systems / Sparse Computing</h3>
 
   <p><strong>Towards Batched Activation Sparsity in LLM Decoding</strong> <em>(Master's thesis)</em><br>
-  I developed an oracle analysis and Triton block-sparse GPU kernels to study activation sparsity in batched LLM decoding. The oracle showed approximately 64% average block sparsity at batch size 16 when each decoding step was evaluated independently. With limited model-quality degradation, an online heuristic achieved only 11.5% average sparsity. Mask-selection overhead made end-to-end decoding slower than dense execution, with throughput at only 0.59&times; the dense baseline.</p>
+  I developed an oracle analysis and Triton block-sparse GPU kernels to study sharing activation sparsity across sequences in batched LLM decoding. The oracle showed approximately 64% average block sparsity at batch size 16 when each decoding step was evaluated independently. With limited model-quality degradation, an online heuristic achieved only 11.5% average sparsity. Mask-selection overhead made end-to-end decoding slower than dense execution, with throughput at only 0.59&times; the dense baseline.</p>
 </section>
 
 <section id="education" class="home-section">
@@ -63,7 +63,7 @@ redirect_from:
 
   <div class="education-entry">
     <h3>Seoul National University</h3>
-    <p>M.S. in Data Science, 2024-2026. Advisor: Hyojin Sung.</p>
+    <p>Master of Data Science, 2024-2026. Advisor: Hyojin Sung.</p>
   </div>
 
   <div class="education-entry">
