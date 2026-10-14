@@ -12,9 +12,8 @@ redirect_from:
   <h2>About</h2>
   <div class="about-layout">
     <div class="about-copy">
-      <p>I am interested in building systems that automatically optimize complex ML workloads. My research focuses on making this optimization practical by reducing search costs and adapting execution to the underlying hardware.</p>
-      <p>I received a Master of Data Science from Seoul National University, where I worked as a graduate researcher in the <a class="lab-link" href="https://codelab.snu.ac.kr/">CODE Lab</a>. I worked on compiler autotuning for high-performance computing, developing data-driven autotuning strategies. I also investigated activation sparsity for efficient LLM inference and developed sparse GPU kernels. I continue to collaborate with the lab on an autotuning framework.</p>
-      <p><strong>Status:</strong> I am applying to <strong>Computer Science Ph.D. programs for Fall 2027</strong>, with a focus on computer systems and ML systems.</p>
+      <p>I received a Master of Data Science from Seoul National University, where I was advised by <a class="lab-link" href="https://hsung.snu.ac.kr/bio" title="Visit Prof. Hyojin Sung's website">Prof. Hyojin Sung&nbsp;<i class="fas fa-external-link-alt external-link-icon" aria-hidden="true"></i></a> in <a class="lab-link" href="https://codelab.snu.ac.kr/" title="Visit CODE Lab's website">CODE Lab&nbsp;<i class="fas fa-external-link-alt external-link-icon" aria-hidden="true"></i></a>. My research lies at the intersection of <strong>machine learning and computer systems</strong>, with a focus on automatic performance optimization. I have worked on compiler autotuning and ML-guided configuration selection for high-performance computing, as well as activation sparsity and GPU kernel optimization for efficient LLM inference. I continue to collaborate with CODE Lab on autotuning research. My goal is to develop methods that <strong>automatically discover hardware-efficient execution</strong> strategies while reducing search costs and manual tuning.</p>
+      <p><strong>Status:</strong> I am applying to <strong>Computer Science Ph.D. programs for Fall 2027</strong>.</p>
     </div>
     <figure class="about-photo">
       <img src="/images/junseo-lee.jpg" alt="Portrait of Junseo Lee">
@@ -25,15 +24,15 @@ redirect_from:
 <section id="research-interests" class="home-section">
   <h2>Research Interests</h2>
   <ul class="research-interest-list">
-    <li><strong>ML Systems &amp; Compilers:</strong> Compiler and runtime optimization for ML workloads</li>
-    <li><strong>Autotuning &amp; Search Algorithms:</strong> Efficient exploration of large optimization spaces</li>
-    <li><strong>Hardware-aware Execution:</strong> Efficient GPU kernels and sparse computation</li>
+    <li><strong>Automated Performance Optimization:</strong> ML-guided search, performance modeling, and autotuning.</li>
+    <li><strong>Compilers &amp; Runtime Systems:</strong> Compiler optimization and hardware-aware execution.</li>
+    <li><strong>Efficient ML Systems:</strong> GPU kernel optimization and efficient ML inference.</li>
   </ul>
 </section>
 
 <section id="publications" class="home-section">
   <h2>Publications</h2>
-  <p><strong><a class="publication-title" href="https://doi.org/10.1145/3731545.3731588">HYPERF: End-to-End Autotuning Framework for High-Performance Computing</a></strong><br>
+  <p><strong><a class="publication-title" href="https://doi.org/10.1145/3731545.3731588">HYPERF: End-to-End Autotuning Framework for High-Performance Computing</a></strong> <a class="publication-paper-link" href="https://doi.org/10.1145/3731545.3731588" aria-label="View HYPERF paper on ACM" title="View paper (ACM)"><i class="fas fa-file-pdf" aria-hidden="true"></i></a><br>
   Juseong Park<sup>*</sup>, Yongwon Shin<sup>*</sup>, Junghyun Lee, <strong>Junseo Lee</strong>, Juyeon Kim, Oh-Kyoung Kwon, and Hyojin Sung.<br>
   HPDC 2025. <small>* Co-first authors.</small></p>
 </section>
@@ -43,19 +42,32 @@ redirect_from:
 
   <h3>Automatic System Optimization / Autotuning</h3>
 
-  <p><strong>HYPERF</strong><br>
-  An end-to-end autotuning framework for high-performance computing. I evaluated HYPERF against OpenTuner on PolyBench kernels, demonstrating a 6.0x average execution speedup and 1.2x faster tuning convergence. <em>Published at HPDC 2025.</em></p>
+  <p class="project-title"><strong>HYPERF</strong> <em>(HPDC 2025)</em></p>
+  <ul class="project-details">
+    <li>Evaluated HYPERF, an end-to-end autotuning framework, against OpenTuner on PolyBench kernels, demonstrating a <strong>6.0&times; average execution speedup</strong> and <strong>1.2&times; faster tuning convergence</strong>.</li>
+  </ul>
 
-  <p><strong>SpMV Workload Optimization</strong> <em>(HYPERF follow-up)</em><br>
-  I built an ML-based selector for sparse matrix-vector multiplication (SpMV). It uses XGBoost to decide whether to group rows by their nonzero counts and a C5.0 decision tree to select grouping configurations (nonzero-count interval and number of groups) for evaluation. Integrating its predictions into the autotuning sampler reduced configuration evaluations from 570 to 230 to reach within 5% of the best observed execution time across matrices from the SuiteSparse Matrix Collection. <em>Included in the SC 2026 submission.</em></p>
+  <p class="project-title"><strong>Sparse Matrix-Vector Multiplication (SpMV) Optimization</strong> <em>(HYPERF follow-up)</em></p>
+  <ul class="project-details">
+    <li>Profiled an SpMV optimization that groups matrix rows with similar numbers of nonzero elements to improve load balancing.</li>
+    <li>Developed an ML-based selector using XGBoost to predict when the optimization is beneficial and C5.0 to recommend promising tuning configurations.</li>
+    <li>Integrated the predictions into HYPERF v2's autotuning sampler, <strong>reducing tuning trials by 60% (570 &rarr; 230)</strong> while achieving <strong>performance within 5% of the best configuration</strong>.</li>
+  </ul>
 
-  <p><strong>Autotuning Sampler and TVM Cost Model</strong><br>
-  In ongoing follow-up work on HYPERF, I am adapting Rising-Successive Rejects to allocate more evaluation budget to promising combinations of algorithm parameters and polyhedral structures in the autotuning sampler. I am also applying bootstrap aggregation to TVM's execution-time prediction model to improve its reliability with limited training data. <em>In preparation for OSDI.</em></p>
+  <p class="project-title"><strong>Autotuning Search and Cost Model Analysis</strong> <em>(Ongoing)</em></p>
+  <ul class="project-details">
+    <li>Investigated missed high-performing schedules in learned autotuning by analyzing cost-model predictions and candidate selection.</li>
+  </ul>
 
   <h3>Efficient LLM Systems / Sparse Computing</h3>
 
-  <p><strong>Towards Batched Activation Sparsity in LLM Decoding</strong> <em>(Master's thesis)</em><br>
-  I developed an oracle analysis and Triton block-sparse GPU kernels to study sharing activation sparsity across sequences in batched LLM decoding. The oracle showed approximately 64% average block sparsity at batch size 16 when each decoding step was evaluated independently. With limited model-quality degradation, an online heuristic achieved only 11.5% average sparsity. Mask-selection overhead made end-to-end decoding slower than dense execution, with throughput at only 0.59&times; the dense baseline.</p>
+  <p class="project-title"><strong>Towards Batched Activation Sparsity in LLM Decoding</strong> <em>(Master's Thesis)</em></p>
+  <ul class="project-details">
+    <li>Investigated whether blocked activation sparsity could be shared across sequences to accelerate batched LLM decoding without compromising model quality.</li>
+    <li>Developed an oracle analysis and <strong>Triton block-sparse GEMM kernels</strong> to evaluate sparsity potential and GPU performance under batching.</li>
+    <li>Found <strong>64% average oracle sparsity</strong> at batch size 16 through independent per-step analysis, corresponding to an estimated <strong>1.6&times; kernel-only speedup</strong> over dense cuBLAS.</li>
+    <li>Identified a substantial gap between oracle sparsity potential and practical online execution: an online heuristic achieved only 11.5% sparsity with limited quality degradation, and end-to-end decoding throughput reached only 0.59&times; the dense baseline.</li>
+  </ul>
 </section>
 
 <section id="education" class="home-section">
@@ -63,7 +75,7 @@ redirect_from:
 
   <div class="education-entry">
     <h3>Seoul National University</h3>
-    <p>Master of Data Science, 2024-2026. Advisor: Hyojin Sung.</p>
+    <p>Master of Data Science, 2024-2026.<br>Advisor: Hyojin Sung.</p>
   </div>
 
   <div class="education-entry">

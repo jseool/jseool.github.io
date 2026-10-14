@@ -111,6 +111,34 @@
     text-decoration: none;
   }
 
+  .publication-paper-link,
+  .publication-paper-link:hover,
+  .publication-paper-link:visited {
+    display: inline-block;
+    margin-left: 0.25em;
+    color: var(--global-link-color);
+    text-decoration: none;
+  }
+
+  .external-link-icon {
+    color: var(--global-link-color);
+    font-size: 0.7em;
+    vertical-align: 0.1em;
+  }
+
+  .project-title {
+    margin-bottom: 0.35em;
+  }
+
+  .project-details {
+    margin-top: 0;
+    margin-bottom: 1.3em;
+
+    li + li {
+      margin-top: 0.35em;
+    }
+  }
+
   .education-entry {
     margin-bottom: 1.5rem;
 
