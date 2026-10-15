@@ -12,7 +12,8 @@ redirect_from:
   <h2>About</h2>
   <div class="about-layout">
     <div class="about-copy">
-      <p>I received a Master of Data Science from Seoul National University, where I was advised by <a class="lab-link" href="https://hsung.snu.ac.kr/bio" title="Visit Prof. Hyojin Sung's website">Prof. Hyojin Sung&nbsp;<i class="fas fa-external-link-alt external-link-icon" aria-hidden="true"></i></a> in <a class="lab-link" href="https://codelab.snu.ac.kr/" title="Visit CODE Lab's website">CODE Lab&nbsp;<i class="fas fa-external-link-alt external-link-icon" aria-hidden="true"></i></a>. My research lies at the intersection of <strong>machine learning and computer systems</strong>, with a focus on automatic performance optimization. I have worked on compiler autotuning and ML-guided configuration selection for high-performance computing, as well as activation sparsity and GPU kernel optimization for efficient LLM inference. I continue to collaborate with CODE Lab on autotuning research. My goal is to develop methods that <strong>automatically discover hardware-efficient execution</strong> strategies while reducing search costs and manual tuning.</p>
+      <p>I received a Master of Data Science from Seoul National University, advised by <a class="lab-link" href="https://hsung.snu.ac.kr/bio" title="Visit Prof. Hyojin Sung's website">Prof. Hyojin Sung&nbsp;<i class="fas fa-external-link-alt external-link-icon" aria-hidden="true"></i></a> in <a class="lab-link" href="https://codelab.snu.ac.kr/" title="Visit CODE Lab's website">CODE Lab&nbsp;<i class="fas fa-external-link-alt external-link-icon" aria-hidden="true"></i></a>, where I continue to collaborate on autotuning research.</p>
+      <p>My research lies at the intersection of <strong>machine learning and computer systems</strong>, with a focus on automated system optimization. I have worked on compiler autotuning and ML-guided configuration selection for high-performance computing, as well as activation sparsity and GPU kernel optimization for efficient LLM inference. My goal is to develop methods that <strong>automatically discover hardware-efficient execution</strong> strategies while reducing search costs and manual tuning.</p>
       <p><strong>Status:</strong> I am applying to <strong>Computer Science Ph.D. programs for Fall 2027</strong>.</p>
     </div>
     <figure class="about-photo">
@@ -24,7 +25,7 @@ redirect_from:
 <section id="research-interests" class="home-section">
   <h2>Research Interests</h2>
   <ul class="research-interest-list">
-    <li><strong>Automated Performance Optimization:</strong> ML-guided search, performance modeling, and autotuning.</li>
+    <li><strong>ML for Systems &amp; Autotuning:</strong> ML-guided search, performance modeling, and autotuning.</li>
     <li><strong>Compilers &amp; Runtime Systems:</strong> Compiler optimization and hardware-aware execution.</li>
     <li><strong>Efficient ML Systems:</strong> GPU kernel optimization and efficient ML inference.</li>
   </ul>
@@ -33,14 +34,14 @@ redirect_from:
 <section id="publications" class="home-section">
   <h2>Publications</h2>
   <p><strong><a class="publication-title" href="https://doi.org/10.1145/3731545.3731588">HYPERF: End-to-End Autotuning Framework for High-Performance Computing</a></strong> <a class="publication-paper-link" href="https://doi.org/10.1145/3731545.3731588" aria-label="View HYPERF paper on ACM" title="View paper (ACM)"><i class="fas fa-file-pdf" aria-hidden="true"></i></a><br>
-  Juseong Park<sup>*</sup>, Yongwon Shin<sup>*</sup>, Junghyun Lee, <strong>Junseo Lee</strong>, Juyeon Kim, Oh-Kyoung Kwon, and Hyojin Sung.<br>
-  HPDC 2025. <small>* Co-first authors.</small></p>
+  Juseong Park<sup>*</sup>, Yongwon Shin<sup>*</sup>, Junghyun Lee, <strong>Junseo Lee</strong>, Juyeon Kim, Oh-Kyoung Kwon, and Hyojin Sung. <small>* Co-first authors.</small><br>
+  In the 34th International Symposium on High-Performance Parallel and Distributed Computing (<strong>HPDC</strong>), 2025.</p>
 </section>
 
 <section id="research-projects" class="home-section">
   <h2>Research Projects</h2>
 
-  <h3>Automatic System Optimization / Autotuning</h3>
+  <h3>Compiler Autotuning</h3>
 
   <p class="project-title"><strong>HYPERF</strong> <em>(HPDC 2025)</em></p>
   <ul class="project-details">
@@ -59,7 +60,7 @@ redirect_from:
     <li>Investigated missed high-performing schedules in learned autotuning by analyzing cost-model predictions and candidate selection.</li>
   </ul>
 
-  <h3>Efficient LLM Systems / Sparse Computing</h3>
+  <h3>Efficient LLM Inference</h3>
 
   <p class="project-title"><strong>Towards Batched Activation Sparsity in LLM Decoding</strong> <em>(Master's Thesis)</em></p>
   <ul class="project-details">

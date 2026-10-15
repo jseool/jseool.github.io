@@ -69,6 +69,10 @@
     color: #855064;
   }
 
+  #research-projects > h2 + h3 {
+    margin-top: 0;
+  }
+
   .research-interest-list {
     li + li {
       margin-top: 0.5rem;
@@ -80,6 +84,10 @@
     grid-template-columns: minmax(0, 1fr) 210px;
     align-items: start;
     gap: 2.5rem;
+  }
+
+  .about-copy > p:first-child {
+    margin-bottom: 0;
   }
 
   .about-photo {
