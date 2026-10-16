@@ -25,7 +25,7 @@ redirect_from:
 <section id="research-interests" class="home-section">
   <h2>Research Interests</h2>
   <ul class="research-interest-list">
-    <li><strong>ML for Systems &amp; Autotuning:</strong> ML-guided search, performance modeling, and autotuning.</li>
+    <li><strong>ML for Systems &amp; Autotuning:</strong> ML-guided performance modeling and efficient optimization search.</li>
     <li><strong>Compilers &amp; Runtime Systems:</strong> Compiler optimization and hardware-aware execution.</li>
     <li><strong>Efficient ML Systems:</strong> GPU kernel optimization and efficient ML inference.</li>
   </ul>
