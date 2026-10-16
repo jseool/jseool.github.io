@@ -43,7 +43,7 @@ redirect_from:
 
   <h3>Compiler Autotuning</h3>
 
-  <p class="project-title"><strong>HYPERF</strong> <em>(HPDC 2025)</em></p>
+  <p class="project-title"><strong>HYPERF</strong> <em>(HPDC 2025)</em> <a class="publication-paper-link" href="https://doi.org/10.1145/3731545.3731588" aria-label="View HYPERF paper on ACM" title="View paper (ACM)"><i class="fas fa-file-pdf" aria-hidden="true"></i></a></p>
   <ul class="project-details">
     <li>Evaluated HYPERF, an end-to-end autotuning framework, against OpenTuner on PolyBench kernels, demonstrating a <strong>6.0&times; average execution speedup</strong> and <strong>1.2&times; faster tuning convergence</strong>.</li>
   </ul>
@@ -76,16 +76,18 @@ redirect_from:
 
   <div class="education-entry">
     <h3>Seoul National University</h3>
-    <p>Master of Data Science, 2024-2026.<br>Advisor: Hyojin Sung.</p>
+    <p>Master of Data Science | 2024 - 2026</p>
+    <p>Advisor: <a class="lab-link" href="https://hsung.snu.ac.kr/bio" title="Visit Prof. Hyojin Sung's website">Hyojin Sung&nbsp;<i class="fas fa-external-link-alt external-link-icon" aria-hidden="true"></i></a> (<a class="lab-link" href="https://codelab.snu.ac.kr/" title="Visit CODE Lab's website"><strong>C</strong>omputing <strong>O</strong>ptimization and <strong>D</strong>ata-driven <strong>E</strong>xploration Lab&nbsp;<i class="fas fa-external-link-alt external-link-icon" aria-hidden="true"></i></a>)</p>
+    <p><em>Thesis: Towards Batched Activation Sparsity in LLM Decoding</em></p>
   </div>
 
   <div class="education-entry">
     <h3>Yonsei University</h3>
-    <p>B.A. in Applied Statistics, 2020-2024.</p>
+    <p>B.A. in Applied Statistics | 2020 - 2024</p>
   </div>
 
   <div class="education-entry">
     <h3>University of California, Berkeley</h3>
-    <p>UCEAP Exchange Program, 2022-2023.</p>
+    <p>UCEAP Exchange Program (Statistics) | 2022 - 2023</p>
   </div>
 </section>

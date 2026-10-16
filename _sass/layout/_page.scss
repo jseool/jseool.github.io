@@ -113,10 +113,20 @@
   }
 
   .about-copy .lab-link,
-  .about-copy .lab-link:hover,
-  .about-copy .lab-link:visited {
+  .about-copy .lab-link:visited,
+  .education-entry .lab-link,
+  .education-entry .lab-link:visited {
     color: inherit;
     text-decoration: none;
+  }
+
+  .about-copy .lab-link:hover,
+  .about-copy .lab-link:focus-visible,
+  .education-entry .lab-link:hover,
+  .education-entry .lab-link:focus-visible {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
   }
 
   .publication-paper-link,
