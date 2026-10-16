@@ -57,7 +57,7 @@ redirect_from:
 
   <p class="project-title"><strong>Autotuning Search and Cost Model Analysis</strong> <em>(Ongoing)</em></p>
   <ul class="project-details">
-    <li>Investigated missed high-performing schedules in learned autotuning by analyzing cost-model predictions and candidate selection.</li>
+    <li>Investigating why TVM's autotuner misses high-performing schedules. The analysis focuses on the cost model's predictions for candidate schedules and the role of random exploration.</li>
   </ul>
 
   <h3>Efficient LLM Inference</h3>
